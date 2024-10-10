@@ -1,0 +1,288 @@
+/* Reset some basic styles */
+body, h1, p, a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+}
+
+ body {
+    background: url('img.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+      overflow-x: hidden;
+}
+.header-section {
+    position: relative; /* Optional, in case you have other elements here */
+    padding: 20px; /* Add padding as needed */
+    z-index: 1000; /* Ensure header is above other content */
+}
+
+.logo {
+    position: fixed; /* Fixes the logo's position */
+    top: 10px; /* Adjusts the vertical position */
+    left: 10px; /* Adjusts the horizontal position */
+    width: 100px; /* Set the width of the logo */
+    height: auto; /* Maintain the aspect ratio */
+    z-index: 1000; /* Ensure the logo is above other content */
+}
+
+/* Other CSS styles go here... */
+
+
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), 
+                url('https://source.unsplash.com/1600x900/?space,galaxy,stars') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-shadow: 0 0 15px #ffcc99, 0 0 20px #ff6600;
+}
+
+.hero-subtitle {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #dcdcff;
+    text-shadow: 0 0 8px #eaeaff;
+}
+
+.hero-cta {
+    margin-top: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 14px 28px;
+    margin: 10px;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.hero-btn {
+    background-color: #ff4500;
+    color: #ffffff;
+}
+
+.hero-btn:hover {
+    background-color: #e03e00;
+    transform: scale(1.05);
+}
+
+.hero-btn-secondary {
+    background-color: #1e90ff;
+    color: #ffffff;
+}
+
+.hero-btn-secondary:hover {
+    background-color: #1c86ee;
+    transform: scale(1.05);
+}
+
+/* Floating images styling */
+.floating-image {
+    position: absolute;
+    opacity: 0.8;
+    animation: float 6s ease-in-out infinite;
+}
+
+.image1 {
+    top: 20%;
+    left: 10%;
+    width: 150px;
+}
+
+.image2 {
+    bottom: 15%;
+    right: 8%;
+    width: 180px;
+    animation-delay: 2s;
+}
+
+.image3 {
+    top: 50%;
+    left: 75%;
+    width: 130px;
+    animation-delay: 4s;
+}
+
+/* Keyframes for floating animation */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+/* Styling for the rounds section */
+.rounds-section {
+  
+    padding: 50px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.rounds-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #ffcc99;
+    text-shadow: 0 0 8px #ff6600;
+}
+
+.rounds-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.round {
+    background-color: #1e1e3f;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease;
+}
+
+.round:hover {
+    transform: scale(1.05);
+}
+
+.round h3 {
+    font-size: 1.5rem;
+    color: #eaeaff;
+    margin-bottom: 10px;
+}
+
+.round p {
+    font-size: 1rem;
+    color: #ccccff;
+    line-height: 1.6;
+}
+/* Styling for the timeline section */
+.timeline-section {
+    
+    padding: 50px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.timeline-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #ffcc99;
+    text-shadow: 0 0 8px #ff6600;
+}
+
+.timeline-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.timeline-day {
+    background-color: #1e1e3f;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease;
+}
+
+.timeline-day:hover {
+    transform: scale(1.05);
+}
+
+.timeline-day h3 {
+    font-size: 1.5rem;
+    color: #eaeaff;
+    margin-bottom: 10px;
+}
+
+.timeline-day ul {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline-day li {
+    font-size: 1rem;
+    color: #ccccff;
+    margin: 8px 0;
+}
+/* Footer Section Styling */
+.footer {
+    background-color: #0a0a2a;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-details {
+    margin-bottom: 15px;
+}
+
+.contact-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffcc99;
+}
+
+.contact-details p {
+    font-size: 1rem;
+    color: #dcdcff;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffcc99;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
