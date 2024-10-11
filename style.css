@@ -21,7 +21,7 @@ body, h1, p, a {
 }
 
 .logo {
-    position: absolute; /* Fixes the logo's position */                                        
+    position: fixed; /* Fixes the logo's position */
     top: 10px; /* Adjusts the vertical position */
     left: 10px; /* Adjusts the horizontal position */
     width: 100px; /* Set the width of the logo */
@@ -49,7 +49,7 @@ body, h1, p, a {
     padding: 20px;
 }
 
-.hero-title {
+/* .hero-title {
     font-size: 4rem;
     font-weight: bold;
     margin-bottom: 15px;
@@ -62,7 +62,30 @@ body, h1, p, a {
     margin-bottom: 25px;
     color: #dcdcff;
     text-shadow: 0 0 8px #eaeaff;
+} */
+.hero-title {
+    font-family: 'Cinzel', serif;
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-shadow: 0 0 15px #ffcc99, 0 0 20px #ff6600;
 }
+
+.hero-subtitle {
+    font-family: 'Unica One', sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+    color: #dcdcff;
+    text-shadow: 0 0 8px #eaeaff;
+}
+.hero-title .highlight {
+    font-size: 5rem; /* Increase the size */
+    font-weight: bold;
+}
+
 
 .hero-cta {
     margin-top: 20px;
@@ -108,20 +131,26 @@ body, h1, p, a {
 .image1 {
     top: 20%;
     left: 10%;
-    width: 150px;
+    width: 200px;
 }
 
 .image2 {
-    bottom: 15%;
-    right: 8%;
+    top: 60%;
+    left: 10%;
     width: 180px;
     animation-delay: 2s;
 }
 
 .image3 {
-    top: 50%;
+    top: 15%;
     left: 75%;
     width: 130px;
+    animation-delay: 4s;
+}
+.image4 {
+    top: 15%;
+    left: 75%;
+    width: 500px;
     animation-delay: 4s;
 }
 
