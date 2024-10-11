@@ -1,3 +1,37 @@
+@media (max-width: 768px) {
+
+    /* Adjust logo size */
+    .logo {
+        width: 70px;
+        left: 5px;
+        top: 5px;
+    }
+
+    
+    /* Adjust floating image sizes */
+    .floating-image {
+        opacity: 0.7; /* Adjust opacity for better visibility on small screens */
+    }
+
+    .image1, .image2, .image3, .image4 {
+        width: 80px; /* Make images smaller */
+        top: auto; /* Reset top for proper layout */
+        left: auto; /* Reset left for proper layout */
+        position: static; /* Let images flow naturally on small screens */
+        margin: 0 auto; /* Center the images */
+        display: block; /* Ensure images display in block layout */
+    }
+
+}
+
+@media (max-width: 480px) {
+    
+        /* Further reduce floating image size */
+        .image1, .image2, .image3, .image4 {
+            width: 60px;
+        }
+    }
+
 /* Reset some basic styles */
 body, h1, p, a {
     margin: 0;
