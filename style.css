@@ -21,7 +21,7 @@ body, h1, p, a {
 }
 
 .logo {
-    position: fixed; /* Fixes the logo's position */
+    position: absolute; /* Fixes the logo's position */
     top: 10px; /* Adjusts the vertical position */
     left: 10px; /* Adjusts the horizontal position */
     width: 100px; /* Set the width of the logo */
